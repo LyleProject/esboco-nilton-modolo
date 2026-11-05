@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nilton Modolo | Advocacia imobiliária e condominial em São Bernardo do Campo</title>
+<meta name="description" content="Advocacia imobiliária e condominial para proprietários, síndicos e investidores. Inventários e família. Rua Frei Gaspar, 941, sala 1011, Centro, São Bernardo do Campo. OAB/SP 359.546.">
+<link rel="canonical" href="https://www.niltonmodolo.com.br/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nilton Modolo | Advocacia imobiliária e condominial">
+<meta property="og:description" content="Proprietários, síndicos e investidores em São Bernardo do Campo.">
+<meta property="og:image" content="https://www.niltonmodolo.com.br/nilton-retrato.webp">
+<meta property="og:url" content="https://www.niltonmodolo.com.br/">
+<meta name="theme-color" content="#0A1628">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LegalService","name":"Nilton Modolo - Advogado","url":"https://www.niltonmodolo.com.br/","image":"https://www.niltonmodolo.com.br/nilton-retrato.webp","email":"advogado@niltonmodolo.com.br","telephone":["+55 11 4235-0801","+55 11 95495-4450"],"address":{"@type":"PostalAddress","streetAddress":"Rua Frei Gaspar, 941, 10º andar, sala 1011","addressLocality":"São Bernardo do Campo","addressRegion":"SP","postalCode":"09720-440","addressCountry":"BR"},"sameAs":["https://www.instagram.com/niltonmodolo/"]}
+</script>
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --navy:#0A1628; --blue:#112B4D; --ocean:#16406B; --emerald:#0D4A3B; --pine:#145C47; --green:#1B7A50; --green-d:#15633F;
+  --mint:#DCEFE4; --sky:#E7EFF8; --gold:#E6C27A;
+  --ink:#0A1628; --ink-2:#3D4A5E; --light:#F2F6FA; --soft:#B6C3D4;
+  --display:Sora,system-ui,sans-serif; --text:Manrope,system-ui,sans-serif;
+  --pad:clamp(20px,6vw,96px); --r:28px; --r-s:18px;
+  --ease:cubic-bezier(.2,.8,.2,1); --slow:cubic-bezier(.22,1,.36,1);
+  --page:#0A1628;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.65 var(--text);color:var(--light);background:var(--page);overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.1;letter-spacing:-.025em}
+h2{font-size:clamp(32px,3.6vw,50px)}
+.wrap{max-width:1360px;margin-inline:auto;padding-inline:var(--pad)}
+section{position:relative}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:8px}
+.lead{font-size:clamp(17px,1.4vw,19px);max-width:56ch}
+
+/* Fundo que muda de cor com a rolagem (camada fixa) */
+.backdrop{position:fixed;inset:0;z-index:-2;background:var(--page)}
+.backdrop .orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.45;transition:background-color 1.2s var(--slow)}
+.backdrop .o1{width:46vw;height:46vw;left:-14vw;top:-12vw;background:var(--o1,#1B7A50);animation:drift 24s var(--slow) infinite alternate}
+.backdrop .o2{width:40vw;height:40vw;right:-12vw;bottom:-14vw;background:var(--o2,#16406B);animation:drift 30s var(--slow) infinite alternate-reverse}
+@keyframes drift{to{transform:translate3d(6vw,-4vw,0) scale(1.15)}}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font:700 16px var(--text);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .35s var(--ease),background-color .25s,color .25s,border-color .25s;will-change:transform}
+.btn:active{scale:.97}
+.btn-main{background:var(--green);color:#fff}
+.btn-main:hover{background:var(--green-d)}
+.btn-line{border-color:rgba(242,246,250,.55);color:var(--light)}
+.btn-line:hover{background:var(--light);color:var(--ink);border-color:var(--light)}
+.btn-dark{background:var(--navy);color:#fff}
+.btn svg{width:20px;height:20px;flex:none;transition:transform .25s var(--ease)}
+.btn:hover svg.arr{transform:translateX(4px)}
+
+/* Cabeçalho */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:background-color .4s,transform .4s var(--ease)}
+header.solid{background:rgba(10,22,40,.92)}
+header.away{transform:translateY(-100%)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:80px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:42px;height:42px;transition:transform .5s var(--ease)}
+.brand:hover svg{transform:rotate(-8deg) scale(1.06)}
+.brand b{display:block;font:600 17px/1.1 var(--display);letter-spacing:.02em}
+.brand small{font-size:12px;letter-spacing:.2em;color:var(--soft)}
+.links{display:flex;align-items:center;gap:30px}
+.links a:not(.btn){text-decoration:none;font-weight:600;font-size:15px;position:relative}
+.links a:not(.btn)::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;border-radius:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.links a:not(.btn):hover::after,.links a.on::after{transform:scaleX(1)}
+.links .btn{min-height:44px;padding:0 20px;font-size:15px}
+.menu-btn{display:none;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.1);border:0;color:var(--light);cursor:pointer;place-items:center}
+.progress{position:absolute;left:0;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,var(--green),var(--gold));transform-origin:left;transform:scaleX(var(--sp,0))}
+
+/* HERO */
+.hero{min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:120px 0 90px}
+.hero-photo{position:absolute;inset:0 0 0 auto;width:68%;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 40%),linear-gradient(to top,transparent 0%,#000 32%);-webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to right,transparent 0%,#000 40%),linear-gradient(to top,transparent 0%,#000 32%);mask-composite:intersect}
+.hero-photo .pz{position:absolute;inset:-4%;will-change:transform}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:60% 25%;filter:saturate(.7);transform:scale(1.14);animation:settle 2.6s var(--slow) forwards}
+@keyframes settle{to{transform:scale(1)}}
+.grain{position:absolute;inset:0;opacity:.15;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-inner{position:relative;z-index:2;width:100%}
+.hero h1{font-size:clamp(30px,5vw,78px);max-width:16ch;margin-bottom:26px;text-wrap:balance}
+.hero h1 .gold{color:var(--gold)}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.w>span{display:inline-block;transform:translateY(105%);animation:wordUp 1s var(--slow) forwards;animation-delay:calc(.15s + var(--d) * 70ms)}
+@keyframes wordUp{to{transform:none}}
+.hero .lead{color:#D5DFEA;margin-bottom:36px;max-width:44ch}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+.facts{display:flex;flex-wrap:wrap;gap:14px;margin-top:56px}
+.fact{background:rgba(255,255,255,.07);border-radius:var(--r-s);padding:16px 22px;min-width:150px;transition:background-color .3s,transform .4s var(--ease)}
+.fact:hover{background:rgba(255,255,255,.12);transform:translateY(-4px)}
+.fact b{display:block;font:600 28px/1.1 var(--display);color:var(--gold)}
+.fact > span{font-size:14px;color:#C9D5E3}
+.scroll-cue{position:absolute;left:50%;bottom:26px;z-index:3;width:26px;height:42px;border-radius:20px;border:2px solid rgba(242,246,250,.5);translate:-50% 0}
+.scroll-cue::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;border-radius:4px;background:var(--gold);translate:-50% 0;animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{60%{transform:translateY(12px);opacity:0}100%{opacity:0}}
+
+/* Áreas: cartões que se empilham */
+.areas{padding:clamp(96px,11vw,170px) 0}
+.areas-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.areas-head p{color:#CFDBE8}
+.stack{display:grid;gap:28px}
+.card{position:sticky;top:110px;min-height:min(560px,72vh);border-radius:var(--r);overflow:hidden;display:grid;grid-template-columns:1.05fr 1fr;transform-origin:center top;isolation:isolate}
+.card:nth-child(1){background:var(--ocean);--c:var(--ocean)}
+.card:nth-child(2){background:var(--pine);top:134px;--c:var(--pine)}
+.card:nth-child(3){background:var(--sky);color:var(--ink);top:158px;--c:var(--sky)}
+.card::after{content:"";position:absolute;inset:0;z-index:3;pointer-events:none;background:radial-gradient(420px circle at var(--mx,-999px) var(--my,-999px),rgba(255,255,255,.12),transparent 60%);transition:opacity .3s}
+.card-body{padding:clamp(28px,4vw,56px);position:relative;z-index:2;display:flex;flex-direction:column}
+.card h3{font-size:clamp(28px,2.8vw,40px);margin-bottom:14px}
+.card p{max-width:42ch;opacity:.92}
+.card ul{list-style:none;display:grid;gap:10px;margin-top:28px}
+.card li{display:flex;gap:12px;align-items:flex-start}
+.card li svg{width:22px;height:22px;flex:none;margin-top:2px;color:var(--gold)}
+.card:nth-child(3) li svg{color:var(--green)}
+.card .tag{margin-top:auto;padding-top:28px;font-weight:700;font-size:15px}
+.card-photo{position:relative;overflow:hidden}
+.card-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.75);transform:scale(1.08);transition:transform 1.4s var(--slow)}
+.card:hover .card-photo img{transform:scale(1.02)}
+.card-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--c) 0%,transparent 50%)}
+
+/* Frase que acende palavra por palavra */
+.statement{padding:clamp(70px,8vw,120px) 0}
+.statement p{font:600 clamp(22px,2.5vw,36px)/1.3 var(--display);letter-spacing:-.02em;max-width:30ch}
+.statement{color:var(--light);transition:color .5s var(--ease)}
+html.js:not(.page-dark) .statement{color:var(--ink)}
+.statement .sw{opacity:.18;transition:opacity .25s linear}
+.statement .sw.lit{opacity:1}
+.statement .sw.hl{color:var(--gold)}
+
+/* Seu caso */
+.case{color:var(--ink);padding:clamp(120px,13vw,200px) 0}
+html:not(.js) .case{background:var(--mint)}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:center}
+.case-photo{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;clip-path:inset(8% 8% 8% 8% round var(--r));transition:clip-path 1.4s var(--slow)}
+.case-photo.in{clip-path:inset(0 0 0 0 round var(--r))}
+.case-photo img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);transition:transform 1.8s var(--slow)}
+.case-photo.in img{transform:none}
+.case-photo::after{content:"";position:absolute;inset:auto 0 0;height:45%;background:linear-gradient(to top,rgba(10,22,40,.85),transparent)}
+.case-photo figcaption{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;color:#fff;font-weight:600}
+.case,.case .lead,.case .steps,.case-photo + div h2{transition:color .5s var(--ease)}
+.page-dark .case{--ink:#F2F6FA;--ink-2:#C9D5E3}
+.docs{--ink:#0A1628;--ink-2:#3D4A5E;color:var(--ink)}
+.case h2{margin-bottom:14px}
+.case .lead{color:var(--ink-2)}
+.seg{position:relative;display:flex;flex-wrap:wrap;gap:4px;margin:28px 0 22px;padding:6px;background:rgba(10,22,40,.07);border-radius:999px;width:fit-content}
+.seg .pill{position:absolute;z-index:0;border-radius:999px;background:var(--navy);transition:left .45s var(--ease),top .45s var(--ease),width .45s var(--ease),height .45s var(--ease)}
+.seg button{position:relative;z-index:1;min-height:44px;padding:0 20px;border:0;border-radius:999px;background:transparent;font:700 15px var(--text);color:var(--ink-2);cursor:pointer;transition:color .35s}
+.seg button:hover{color:var(--ink)}
+.seg button[aria-pressed="true"]{color:#fff}
+.docs{background:#fff;border-radius:var(--r);padding:28px;display:grid;gap:14px}
+.docs h3{font:700 15px var(--text);letter-spacing:0;color:var(--green-d)}
+.doc{display:flex;gap:14px;align-items:center;transition:opacity .3s,transform .35s var(--ease)}
+.doc:nth-of-type(2){transition-delay:.05s}.doc:nth-of-type(3){transition-delay:.1s}
+.doc .n{flex:none;width:40px;height:40px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-weight:700;color:var(--green-d)}
+.doc b{display:block;font-weight:700}
+.doc span{font-size:15px;color:var(--ink-2)}
+.docs.swap .doc{opacity:0;transform:translateX(-14px)}
+.case .actions{margin-top:24px}
+.steps{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:22px;font-size:15px;color:var(--ink-2);font-weight:600}
+.steps span{display:flex;align-items:center;gap:8px}
+.steps span::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green)}
+
+/* Sobre: o advogado */
+.about{padding:clamp(96px,11vw,170px) 0;overflow:hidden}
+.about-bg{position:absolute;inset:0;z-index:-1;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 30%,#000 70%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 30%,#000 70%,transparent 100%)}
+.about-bg img{width:100%;height:125%;object-fit:cover;opacity:.28;filter:saturate(.5);will-change:transform}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,80px);align-items:center}
+.about h2{margin-bottom:22px}
+.about p{color:#D5DFEA;margin-bottom:18px;max-width:56ch}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chip{background:rgba(255,255,255,.09);border-radius:999px;padding:10px 18px;font-size:15px;font-weight:600;transition:background-color .3s,transform .3s var(--ease)}
+.chip:hover{background:rgba(255,255,255,.16);transform:translateY(-2px)}
+.chip b{color:var(--gold)}
+.nums{display:flex;flex-wrap:wrap;gap:36px;margin-top:34px}
+.nums b{display:block;font:600 clamp(34px,3.4vw,48px)/1 var(--display);color:var(--gold)}
+.nums > div > span{font-size:15px;color:#C9D5E3}
+.portrait{position:relative;justify-self:center;width:min(100%,500px);aspect-ratio:883/1286}
+.portrait .halo{position:absolute;left:8%;right:8%;top:6%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,#2E9C6A,#145C47 45%,#16406B 80%);filter:blur(2px);opacity:.9;animation:breathe 7s ease-in-out infinite alternate}
+@keyframes breathe{to{transform:scale(1.06) translateY(-10px)}}
+.portrait .ring{position:absolute;left:2%;right:2%;top:0;aspect-ratio:1;border-radius:50%;border:2px solid rgba(230,194,122,.45);animation:spin 40s linear infinite}
+.portrait .ring::after{content:"";position:absolute;top:12%;left:12%;width:14px;height:14px;border-radius:50%;background:var(--gold)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portrait img{position:relative;width:100%;height:100%;object-fit:contain;-webkit-mask-image:linear-gradient(180deg,#000 70%,transparent 98%);mask-image:linear-gradient(180deg,#000 70%,transparent 98%);will-change:transform}
+.portrait .badge{position:absolute;right:0;bottom:22%;z-index:2;background:var(--light);color:var(--ink);border-radius:var(--r-s);padding:14px 18px;font-size:14px;font-weight:600;animation:float 6s ease-in-out infinite alternate}
+.portrait .badge b{display:block;font:600 18px var(--display)}
+@keyframes float{to{transform:translateY(-12px)}}
+.sign{margin-top:30px;font:600 22px var(--display)}
+.sign small{display:block;font:500 14px var(--text);color:var(--soft);margin-top:4px}
+
+/* Dúvidas */
+.faq{padding:clamp(96px,11vw,160px) 0}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,96px)}
+.faq-grid > div:first-child p{color:#CFDBE8;margin-top:16px}
+.qa{position:relative;background:rgba(255,255,255,.07);border-radius:var(--r-s);margin-bottom:12px;transition:background-color .3s,transform .35s var(--ease);overflow:hidden}
+.qa:hover{transform:translateX(6px)}
+.qa:hover,.qa.open{background:rgba(255,255,255,.12)}
+.qa button{width:100%;display:flex;justify-content:space-between;align-items:center;gap:18px;padding:20px 24px;background:none;border:0;color:var(--light);font:700 17px/1.4 var(--text);text-align:left;cursor:pointer;min-height:44px}
+.qa button .pl{flex:none;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;transition:transform .35s var(--ease),background-color .3s,color .3s}
+.qa button[aria-expanded="true"] .pl{transform:rotate(45deg);background:var(--gold);color:var(--ink)}
+.qa .ans{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s var(--ease)}
+.qa .ans>div{overflow:hidden}
+.qa .ans p{padding:0 24px 22px;color:#D5DFEA;max-width:62ch}
+.qa.open .ans{grid-template-rows:1fr}
+
+/* Contato */
+.contact{padding:clamp(96px,11vw,160px) 0 clamp(64px,8vw,110px)}
+.contact-card{position:relative;border-radius:calc(var(--r) + 8px);overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;background:rgba(10,22,40,.5);min-height:540px}
+.contact-info{padding:clamp(28px,4.5vw,64px);position:relative;z-index:2}
+.who{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+.who img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 20%}
+.who b{display:block;font:600 18px var(--display)}
+.who span{font-size:14px;color:var(--soft)}
+.contact-info h2{margin-bottom:14px}
+.contact-info .lead{color:#D5DFEA;margin-bottom:28px}
+.info{list-style:none;display:grid;gap:18px;margin-bottom:32px}
+.info li{display:flex;gap:14px}
+.info .ic{flex:none;width:44px;height:44px;border-radius:14px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:var(--gold)}
+.info svg{width:22px;height:22px}
+.info b{display:block}
+.info a{text-decoration:none;white-space:nowrap}
+.info a:hover{text-decoration:underline;text-decoration-color:var(--gold)}
+.map{position:relative;min-height:360px}
+.map iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.3) contrast(1.05)}
+
+footer{padding:40px 0 44px;color:var(--soft);font-size:15px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px}
+.foot nav{display:flex;gap:22px;flex-wrap:wrap}
+footer a{text-decoration:none;color:var(--light)}
+footer a:hover{color:var(--gold)}
+
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#1E9E5A;color:#fff;display:grid;place-items:center;transition:transform .3s var(--ease)}
+.wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:#1E9E5A;animation:pulse 2.6s var(--ease) infinite;z-index:-1}
+@keyframes pulse{to{transform:scale(1.6);opacity:0}}
+.wa:hover{transform:scale(1.08) rotate(-6deg)}
+.wa svg{width:30px;height:30px}
+
+/* Entradas */
+.js .rise{opacity:0;transform:translateY(32px);transition:opacity 1.1s var(--slow),transform 1.1s var(--slow);transition-delay:calc(var(--i,0)*90ms)}
+.js .rise.in{opacity:1;transform:none}
+
+@media (max-width:1023px){
+  .menu-btn{display:grid}
+  .links{position:fixed;top:80px;left:12px;right:12px;flex-direction:column;align-items:stretch;gap:4px;padding:16px;border-radius:var(--r);background:var(--blue);opacity:0;transform:translateY(-10px);pointer-events:none;transition:opacity .3s,transform .3s var(--ease)}
+  .links.open{opacity:1;transform:none;pointer-events:auto}
+  .links a:not(.btn){padding:12px 8px;font-size:17px}
+  .areas-head,.case-grid,.faq-grid,.contact-card,.about-grid{grid-template-columns:1fr}
+  .hero{align-items:flex-end;padding-top:0}
+  .hero-photo{width:100%;height:58%;inset:0 0 auto;-webkit-mask-image:linear-gradient(to top,transparent 0%,rgba(0,0,0,.35) 30%,#000 75%);mask-image:linear-gradient(to top,transparent 0%,rgba(0,0,0,.35) 30%,#000 75%);-webkit-mask-composite:initial;mask-composite:initial}
+  .hero-inner{padding-top:48svh}
+  .scroll-cue{display:none}
+  .card{position:relative;top:auto!important;grid-template-columns:1fr;transform:none!important}
+  .card-photo{height:220px;order:-1}
+  .card-photo::before{background:linear-gradient(0deg,var(--c) 0%,transparent 60%)}
+  .case-photo{aspect-ratio:16/11}
+  .portrait{width:min(86%,420px);order:-1}
+  .map{min-height:300px}
+}
+@media (max-width:767px){
+  .facts{gap:10px;margin-top:36px}
+  .fact{min-width:0;flex:1 1 40%;padding:14px 16px}
+  .fact b{font-size:22px}
+  .seg{border-radius:var(--r-s);width:auto}
+  .seg button{flex:1 1 40%}
+  .seg .pill{border-radius:14px}
+  .docs{padding:22px}
+  .nums{gap:24px}
+  .portrait .badge{right:0;bottom:18%;padding:10px 14px}
+  .contact-card{border-radius:var(--r)}
+}
+@media (hover:none),(max-width:767px){
+  .backdrop .orb,.portrait .ring{animation:none}
+  .grain{display:none}
+  .card::after{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .js .rise{opacity:1;transform:none}
+  .w>span{transform:none}
+  .hero-photo img,.case-photo img{transform:none}
+  .case-photo{clip-path:none}
+  .statement .sw{opacity:1}
+}
+</style>
+</head>
+<body>
+<div class="backdrop" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span></div>
+
+<header id="hdr">
+  <nav class="wrap nav" aria-label="Principal">
+    <a href="#inicio" class="brand" aria-label="Nilton Modolo Advogado, início">
+      <svg viewBox="0 0 44 44" aria-hidden="true"><rect width="44" height="44" rx="14" fill="#F2F6FA"/><path d="M9 32V13l9 11V13" fill="none" stroke="#0A1628" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/><path d="M18 32V22l8 9 9-18v19" fill="none" stroke="#1B7A50" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <span><b>Nilton Modolo</b><small>ADVOGADO</small></span>
+    </a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="links">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+    </button>
+    <div class="links" id="links">
+      <a href="#atuacao">Atuação</a>
+      <a href="#seu-caso">Seu caso</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a class="btn btn-main mag" href="#contato">Fale com o escritório</a>
+    </div>
+  </nav>
+  <span class="progress" id="progress" aria-hidden="true"></span>
+</header>
+
+<main>
+  <section class="hero" id="inicio" data-bg="#0A1628" data-o1="#1B7A50" data-o2="#16406B">
+    <div class="hero-photo">
+      <div class="pz" id="hero-pz">
+        <img src="https://images.unsplash.com/photo-1760089449852-e8cade7feb53?w=1800&q=75&auto=format" width="1800" height="2400" alt="Estátua de mármore da Justiça segurando a balança">
+      </div>
+      <span class="grain" aria-hidden="true"></span>
+    </div>
+    <div class="wrap hero-inner">
+      <h1 aria-label="Imóveis e condomínios bem resolvidos"><span aria-hidden="true"><span class="w"><span style="--d:0">Imóveis</span></span> <span class="w"><span style="--d:1">e</span></span> <span class="w"><span style="--d:2">condomínios</span></span> <span class="w gold"><span style="--d:3">bem</span></span> <span class="w gold"><span style="--d:4">resolvidos</span></span></span></h1>
+      <p class="lead rise" style="--i:3">Advocacia imobiliária e condominial para proprietários, síndicos e investidores, no Centro de São Bernardo do Campo.</p>
+      <div class="actions rise" style="--i:4">
+        <a class="btn btn-main mag" href="https://wa.me/5511954954450?text=Ol%C3%A1%2C%20Dr.%20Nilton.%20Gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3Z"/></svg>
+          Agendar pelo WhatsApp</a>
+        <a class="btn btn-line mag" href="#atuacao">Ver áreas de atuação</a>
+      </div>
+      <div class="facts rise" style="--i:5">
+        <div class="fact"><b><span data-count="10">0</span>+ anos</b><span>em processos judiciais</span></div>
+        <div class="fact"><b>OAB/SP</b><span>inscrição 359.546</span></div>
+        <div class="fact"><b>Perito</b><span>judicial imobiliário</span></div>
+      </div>
+    </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </section>
+
+  <section class="areas" id="atuacao" data-bg="#0F2340" data-o1="#16406B" data-o2="#0D4A3B">
+    <div class="wrap">
+      <div class="areas-head">
+        <h2 class="rise">Três frentes, um mesmo cuidado</h2>
+        <p class="lead rise" style="--i:1">Do contrato de compra à assembleia do prédio e à partilha de bens: cada área com atendimento próximo e explicação clara.</p>
+      </div>
+      <div class="stack" id="stack">
+        <article class="card">
+          <div class="card-body">
+            <h3>Direito Imobiliário</h3>
+            <p>Comprar, vender, alugar ou regularizar com segurança, sem surpresas na matrícula.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Análise de matrícula e due diligence</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Contratos de compra, venda e locação</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Escritura, registro, usucapião e avaliação</li>
+            </ul>
+            <p class="tag">Para proprietários e investidores</p>
+          </div>
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1100&q=75&auto=format" width="1100" height="1400" alt="Edifício residencial visto de baixo contra o céu azul" loading="lazy"></div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>Direito Condominial</h3>
+            <p>Apoio jurídico ao síndico para decidir com segurança e manter a convivência em ordem.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Convenção e regimento interno</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Assembleias, editais e atas</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Cobrança de inadimplência e conflitos</li>
+            </ul>
+            <p class="tag">Para síndicos e administradoras</p>
+          </div>
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1567505477286-9c7269119db7?w=1100&q=75&auto=format" width="1100" height="1400" alt="Fachada de prédio residencial com janelas em grade" loading="lazy"></div>
+        </article>
+        <article class="card">
+          <div class="card-body">
+            <h3>Inventários e Família</h3>
+            <p>Partilha de bens e questões familiares conduzidas com cuidado, discrição e agilidade.</p>
+            <ul>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Inventário em cartório ou judicial</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Partilha de imóveis entre herdeiros</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="m5 12 5 5 9-10"/></svg>Divórcio e acordos de família</li>
+            </ul>
+            <p class="tag">Para herdeiros e famílias</p>
+          </div>
+          <div class="card-photo"><img src="https://images.unsplash.com/photo-1609770231080-e321deccc34c?w=1100&q=75&auto=format" width="1100" height="1400" alt="Chave antiga na fechadura de uma porta" loading="lazy"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement" data-bg="#0D3F35" data-o1="#1B7A50" data-o2="#16406B" aria-label="Nossa forma de trabalhar">
+    <div class="wrap"><p id="stmt">Um contrato bem feito hoje evita um processo amanhã. É assim que cuidamos do seu patrimônio.</p></div>
+  </section>
+
+  <section class="case" id="seu-caso" data-bg="#DCEFE4" data-o1="#9ED3B6" data-o2="#BFD6EE">
+    <div class="wrap case-grid">
+      <figure class="case-photo" id="case-photo">
+        <img src="https://images.unsplash.com/photo-1564846824194-346b7871b855?w=1100&q=75&auto=format" width="1100" height="1375" alt="Mão assinando um contrato sobre a mesa" loading="lazy">
+        <figcaption>Primeira conversa no escritório ou por vídeo</figcaption>
+      </figure>
+      <div>
+        <h2 class="rise">Qual é o seu caso?</h2>
+        <p class="lead rise" style="--i:1">Escolha o seu perfil e veja o que levar para a primeira conversa.</p>
+        <div class="seg rise" style="--i:2" role="group" aria-label="Escolha o seu perfil" id="seg">
+          <span class="pill" aria-hidden="true"></span>
+          <button aria-pressed="true" data-p="proprietario">Proprietário</button>
+          <button aria-pressed="false" data-p="sindico">Síndico</button>
+          <button aria-pressed="false" data-p="investidor">Investidor</button>
+          <button aria-pressed="false" data-p="herdeiro">Herdeiro</button>
+        </div>
+        <div class="docs rise" style="--i:3" id="docs" aria-live="polite">
+          <h3>Leve, se tiver</h3>
+          <div class="doc"><span class="n" aria-hidden="true">1</span><div><b id="d1">Matrícula atualizada do imóvel</b><span id="v1">Pedida no cartório de registro</span></div></div>
+          <div class="doc"><span class="n" aria-hidden="true">2</span><div><b id="d2">Contrato ou escritura</b><span id="v2">O que já foi assinado</span></div></div>
+          <div class="doc"><span class="n" aria-hidden="true">3</span><div><b id="d3">Documento pessoal</b><span id="v3">RG e CPF</span></div></div>
+        </div>
+        <div class="steps rise" style="--i:4"><span>Conversa inicial</span><span>Análise do caso</span><span>Honorários por escrito</span><span>Acompanhamento</span></div>
+        <div class="actions rise" style="--i:5">
+          <a class="btn btn-dark mag" id="wa-case" href="https://wa.me/5511954954450?text=Ol%C3%A1%2C%20Dr.%20Nilton.%20Sou%20propriet%C3%A1rio%20e%20gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener">Enviar meu caso
+            <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre" data-bg="#0C3634" data-o1="#145C47" data-o2="#16406B">
+    <div class="about-bg" aria-hidden="true"><img id="about-img" src="https://images.unsplash.com/photo-1535905496755-26ae35d0ae54?w=1800&q=70&auto=format" width="1800" height="1200" alt="" loading="lazy"></div>
+    <div class="wrap about-grid">
+      <div>
+        <h2 class="rise">Quem cuida do seu caso</h2>
+        <p class="rise" style="--i:1">Dr. Nilton Modolo atua há mais de dez anos em processos judiciais e se dedica ao direito imobiliário e condominial. Também é corretor, avaliador de imóveis e perito judicial imobiliário, o que traz para o atendimento a visão do negócio, não só do processo.</p>
+        <p class="rise" style="--i:2">Antes da advocacia, trabalhou nove anos em seguradora. Hoje integra as comissões de Direito Imobiliário e de Regularização de Imóveis da OAB de São Bernardo do Campo.</p>
+        <div class="nums rise" style="--i:3">
+          <div><b><span data-count="10">0</span>+</b><span>anos em processos</span></div>
+          <div><b><span data-count="9">0</span></b><span>anos em seguradora</span></div>
+          <div><b><span data-count="2">0</span></b><span>comissões na OAB/SBC</span></div>
+        </div>
+        <div class="chips rise" style="--i:4">
+          <span class="chip"><b>OAB/SP</b> 359.546</span>
+          <span class="chip"><b>CRECI/SP</b> 273619-F</span>
+          <span class="chip"><b>CNAI</b> 48258</span>
+          <span class="chip">Pós em Direito Imobiliário e Condominial</span>
+          <span class="chip">Especialista em Inventários e Família</span>
+        </div>
+      </div>
+      <div class="portrait rise" style="--i:1" id="portrait">
+        <span class="halo" aria-hidden="true"></span>
+        <span class="ring" aria-hidden="true"></span>
+        <img src="nilton-sentado.webp" width="883" height="1286" alt="Dr. Nilton Modolo, de terno cinza, sentado em um banco" loading="lazy">
+        <div class="badge"><b>Dr. Nilton Modolo</b>Advogado e perito imobiliário</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="duvidas" data-bg="#112B4D" data-o1="#16406B" data-o2="#1B7A50">
+    <div class="wrap faq-grid">
+      <div>
+        <h2 class="rise">Dúvidas comuns</h2>
+        <p class="rise" style="--i:1">Não achou a sua? Mande pelo WhatsApp que respondemos.</p>
+      </div>
+      <div>
+        <div class="qa rise"><button aria-expanded="false" aria-controls="a1" id="q1">O atendimento pode ser on-line?<span class="pl" aria-hidden="true">+</span></button><div class="ans" id="a1" role="region" aria-labelledby="q1"><div><p>Sim. Pode ser no escritório, na sala 1011, ou por videochamada, como for melhor para você.</p></div></div></div>
+        <div class="qa rise"><button aria-expanded="false" aria-controls="a2" id="q2">Vale consultar antes de comprar um imóvel?<span class="pl" aria-hidden="true">+</span></button><div class="ans" id="a2" role="region" aria-labelledby="q2"><div><p>É o melhor momento para evitar problema: a análise da matrícula e do vendedor mostra riscos antes de qualquer sinal.</p></div></div></div>
+        <div class="qa rise"><button aria-expanded="false" aria-controls="a3" id="q3">Inventário pode ser feito em cartório?<span class="pl" aria-hidden="true">+</span></button><div class="ans" id="a3" role="region" aria-labelledby="q3"><div><p>Quando todos os herdeiros são maiores e estão de acordo, em geral sim, e costuma ser mais rápido que na Justiça.</p></div></div></div>
+        <div class="qa rise"><button aria-expanded="false" aria-controls="a4" id="q4">O escritório atende o condomínio todo mês?<span class="pl" aria-hidden="true">+</span></button><div class="ans" id="a4" role="region" aria-labelledby="q4"><div><p>Sim. Há assessoria pontual, para uma demanda, e assessoria contínua para síndicos e administradoras.</p></div></div></div>
+        <div class="qa rise"><button aria-expanded="false" aria-controls="a5" id="q5">Vocês fazem avaliação e perícia de imóveis?<span class="pl" aria-hidden="true">+</span></button><div class="ans" id="a5" role="region" aria-labelledby="q5"><div><p>Sim. O Dr. Nilton é avaliador de imóveis e perito judicial imobiliário, e pode avaliar o valor do bem para venda, partilha ou processo.</p></div></div></div>
+        <div class="qa rise"><button aria-expanded="false" aria-controls="a6" id="q6">Como são definidos os honorários?<span class="pl" aria-hidden="true">+</span></button><div class="ans" id="a6" role="region" aria-labelledby="q6"><div><p>Por escrito, depois da análise do caso, seguindo a tabela de referência da OAB/SP.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contato" data-bg="#0D3F35" data-o1="#1B7A50" data-o2="#16406B">
+    <div class="wrap">
+      <div class="contact-card rise">
+        <div class="contact-info">
+          <h2>Vamos conversar</h2>
+          <p class="lead">Atendimento no Centro de São Bernardo do Campo ou por vídeo.</p>
+          <div class="who"><img src="nilton-retrato.webp" width="944" height="899" alt="Retrato do Dr. Nilton Modolo" loading="lazy"><div><b>Fale direto com o Dr. Nilton</b><span>Resposta pelo WhatsApp em horário comercial</span></div></div>
+          <ul class="info">
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><b>Rua Frei Gaspar, 941, 10º andar, sala 1011</b>Centro, São Bernardo do Campo – SP, 09720-440</div></li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><div><b>Telefones</b><a href="tel:+551142350801">(11) 4235-0801</a> · <a href="https://wa.me/5511954954450" target="_blank" rel="noopener">(11) 95495-4450</a></div></li>
+            <li><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 8 9 6 9-6"/></svg></span><div><b>E-mail</b><a href="mailto:advogado@niltonmodolo.com.br">advogado@niltonmodolo.com.br</a></div></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-main mag" href="https://wa.me/5511954954450?text=Ol%C3%A1%2C%20Dr.%20Nilton.%20Gostaria%20de%20agendar%20uma%20conversa." target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+            <a class="btn btn-line mag" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Frei+Gaspar+941+Sao+Bernardo+do+Campo+SP" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+        <div class="map"><iframe title="Mapa do escritório na Rua Frei Gaspar, 941, São Bernardo do Campo" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Frei+Gaspar,+941,+S%C3%A3o+Bernardo+do+Campo+-+SP&output=embed"></iframe></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer data-bg="#0A1628">
+  <div class="wrap foot">
+    <span>© <span id="ano">2026</span> Nilton Modolo · Advogado · OAB/SP 359.546</span>
+    <nav aria-label="Rodapé"><a href="#atuacao">Atuação</a><a href="#sobre">Sobre</a><a href="https://www.instagram.com/niltonmodolo/" target="_blank" rel="noopener">Instagram</a><a href="#">Privacidade [A DEFINIR]</a></nav>
+    <span>Fotos de ambiente: Unsplash</span>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/5511954954450" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2s.2-1.1.2-1.2-.2-.2-.5-.3Z"/></svg>
+</a>
+
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const desk=matchMedia('(min-width:1024px)');
+const fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+$('#ano').textContent=new Date().getFullYear();
+
+// Menu
+const mb=$('.menu-btn'),links=$('#links');
+mb.addEventListener('click',()=>{const o=links.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.setAttribute('aria-label',o?'Fechar menu':'Abrir menu')});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');mb.setAttribute('aria-expanded','false')}));
+
+// Frase: separar palavras
+const stmt=$('#stmt');
+stmt.innerHTML=stmt.textContent.split(' ').map(w=>`<span class="sw${/patrimônio/.test(w)?' hl':''}">${w}</span>`).join(' ');
+const sws=$$('#stmt .sw');
+
+// Entradas e contagens
+function count(n){const to=+n.dataset.count;if(reduce){n.textContent=to;return}const t0=performance.now();
+  (function step(t){const p=Math.min(1,(t-t0)/1500);n.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)})(t0)}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');io.unobserve(e.target);e.target.querySelectorAll('[data-count]').forEach(count)}),{threshold:.15});
+$$('.rise,#case-photo').forEach(el=>io.observe(el));
+
+// Cor do fundo que se transforma entre seções
+const zones=$$('[data-bg]');
+const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+const mix=(a,b,t)=>a.map((v,i)=>Math.round(v+(b[i]-v)*t));
+const rgb=c=>`rgb(${c.join(',')})`;
+const ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2;
+const root=document.documentElement;
+function paint(){
+  const mid=innerHeight*.55;let i=0;
+  for(let k=0;k<zones.length;k++){if(zones[k].getBoundingClientRect().top<=mid)i=k}
+  const cur=zones[i],nxt=zones[i+1]||cur;
+  const nTop=nxt.getBoundingClientRect().top;const span=innerHeight*.7;
+  const t=nxt===cur?0:ease(Math.min(1,Math.max(0,1-(nTop-mid+span*.5)/span)));
+  const c=mix(hex(cur.dataset.bg),hex(nxt.dataset.bg),t);root.style.setProperty('--page',rgb(c));
+  root.classList.toggle('page-dark',(.2126*c[0]+.7152*c[1]+.0722*c[2])/255<.5);
+  const pick=k=>(t>.5?nxt:cur).dataset[k];
+  if(pick('o1'))root.style.setProperty('--o1',pick('o1'));
+  if(pick('o2'))root.style.setProperty('--o2',pick('o2'));
+}
+
+// Rolagem
+const hdr=$('#hdr'),cards=$$('.card'),aboutImg=$('#about-img'),about=$('#sobre'),pz=$('#hero-pz'),prog=$('#progress'),portrait=$('#portrait img');
+const navLinks=$$('.links a[href^="#"]:not(.btn)');
+let lastY=scrollY,tick=false;
+function onScroll(){
+  tick=false;const y=scrollY,h=innerHeight;
+  hdr.classList.toggle('solid',y>40);
+  hdr.classList.toggle('away',y>lastY&&y>400&&!links.classList.contains('open'));
+  lastY=y;
+  prog.style.setProperty('--sp',y/(document.documentElement.scrollHeight-h));
+  paint();
+  navLinks.forEach(a=>{const s=$(a.getAttribute('href'));const r=s.getBoundingClientRect();a.classList.toggle('on',r.top<h*.5&&r.bottom>h*.5)});
+  if(reduce)return;
+  if(y<h)pz.style.transform=`translate3d(${pz.dataset.mx||0}px,${y*.18}px,0) scale(${1+y/h*.08})`;
+  if(desk.matches){
+    cards.forEach((c,i)=>{const next=cards[i+1];if(!next){c.style.transform='';return}
+      const d=next.getBoundingClientRect().top-c.getBoundingClientRect().top;const p=Math.min(1,Math.max(0,1-d/c.offsetHeight));
+      c.style.transform=`scale(${1-p*.06})`;c.style.filter=`brightness(${1-p*.25})`});
+  }
+  // frase acende conforme a rolagem
+  const sr=stmt.getBoundingClientRect();const sp=Math.min(1,Math.max(0,(h*.85-sr.top)/(sr.height+h*.45)));
+  const lit=Math.round(sp*sws.length);sws.forEach((w,k)=>w.classList.toggle('lit',k<lit));
+  const r=about.getBoundingClientRect();
+  if(r.bottom>0&&r.top<h){const p=(h-r.top)/(h+r.height);aboutImg.style.transform=`translate3d(0,${-p*16}%,0)`;portrait.style.transform=`translate3d(0,${(.5-p)*40}px,0)`}
+}
+addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});
+addEventListener('resize',onScroll);onScroll();
+if(reduce)sws.forEach(w=>w.classList.add('lit'));
+
+// Efeitos de mouse (só computador)
+if(fine&&!reduce){
+  const hero=$('#inicio');
+  hero.addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*-24;pz.dataset.mx=x;pz.style.transform=`translate3d(${x}px,${scrollY*.18}px,0) scale(${1+scrollY/innerHeight*.08})`});
+  cards.forEach(c=>c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')}));
+  $$('.mag').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.22}px,${(e.clientY-r.top-r.height/2)*.3}px)`});
+    b.addEventListener('mouseleave',()=>b.style.transform='')});
+}
+
+// Seu caso
+const cases={
+  proprietario:{n:'proprietário',d:[['Matrícula atualizada do imóvel','Pedida no cartório de registro'],['Contrato ou escritura','O que já foi assinado'],['Documento pessoal','RG e CPF']]},
+  sindico:{n:'síndico',d:[['Convenção e regimento interno','As regras do prédio'],['Ata de eleição do síndico','Registrada em cartório'],['Lista de inadimplentes','Se for o caso']]},
+  investidor:{n:'investidor',d:[['Matrícula do imóvel de interesse','Pedida no cartório de registro'],['Dados do vendedor','Nome e CPF ou CNPJ'],['Proposta ou anúncio','Se já houver']]},
+  herdeiro:{n:'herdeiro',d:[['Certidão de óbito','Emitida pelo cartório'],['Documentos dos herdeiros','RG e CPF de cada um'],['Lista de bens','Imóveis, veículos e contas']]}
+};
+const docs=$('#docs'),wa=$('#wa-case'),seg=$('#seg'),pill=$('#seg .pill');
+function movePill(b){pill.style.left=b.offsetLeft+'px';pill.style.top=b.offsetTop+'px';pill.style.width=b.offsetWidth+'px';pill.style.height=b.offsetHeight+'px'}
+$$('.seg button').forEach(b=>b.addEventListener('click',()=>{
+  $$('.seg button').forEach(x=>x.setAttribute('aria-pressed',x===b));movePill(b);
+  const c=cases[b.dataset.p];docs.classList.add('swap');
+  setTimeout(()=>{c.d.forEach((r,i)=>{$('#d'+(i+1)).textContent=r[0];$('#v'+(i+1)).textContent=r[1]});docs.classList.remove('swap')},reduce?0:280);
+  wa.href='https://wa.me/5511954954450?text='+encodeURIComponent(`Olá, Dr. Nilton. Sou ${c.n} e gostaria de agendar uma conversa.`);
+}));
+const placePill=()=>movePill($('.seg button[aria-pressed="true"]'));
+addEventListener('resize',placePill);document.fonts.ready.then(placePill);placePill();
+
+// Dúvidas
+$$('.qa button').forEach(b=>b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',!o);b.parentElement.classList.toggle('open',!o)}));
+</script>
+</body>
+</html>
